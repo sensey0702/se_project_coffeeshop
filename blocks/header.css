@@ -2,14 +2,12 @@
   padding: 30px 80px 40px;
   height: 100vh;
   max-height: 800px;
-  min-width: 720px;
-  background-color: #ffffff;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/background_header.svg);
+  min-height: 720px;
+  background: url(../images/background_header.svg) center/cover no-repeat
+    #ffffff;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .header__title {
@@ -26,8 +24,7 @@
   display: block;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: italic;
-  font-size: 60px;
-  line-height: 72px;
+  font-weight: normal;
   color: #2f80ed;
   z-index: 2;
 }
@@ -59,6 +56,7 @@
 .header__paragraph {
   font-weight: 500;
   color: #6f6f6f;
+  margin: 0;
 }
 
 .header__paragraph:last-child {
